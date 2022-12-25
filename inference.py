@@ -174,12 +174,9 @@ if __name__ == "__main__":
     find_path = lambda x: [os.path.join(x,f) for f in os.listdir(x)]
     img_paths = find_path('../HeadSwap/test_img')[::-1]
     
-    src_paths = []
-    tgt_paths = []
-    for i in range(len(img_paths)):
-        for j in range(i+1,len(img_paths)):
-            src_paths.extend([img_paths[i],img_paths[j]])
-            tgt_paths.extend([img_paths[j],img_paths[i]])
-    model.run(src_paths,tgt_paths,save_base='res-1020',crop_align=True,cat=True)
+    src_paths = ['./assets/5.jpg']
+    tgt_paths = ['assets/fe54875c-2cf0-4147-b08a-80552a9f46be.jpg']
+    
+    model.run(src_paths,tgt_paths,save_base='res-1125',crop_align=True,cat=True)
     
    
