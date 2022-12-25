@@ -171,8 +171,8 @@ if __name__ == "__main__":
                 'pretrained_models/epoch_20.pth',
                 'pretrained_models/BFM')
 
-    find_path = lambda x: [os.path.join(x,f) for f in os.listdir(x)]
-    img_paths = find_path('../HeadSwap/test_img')[::-1]
+    # find_path = lambda x: [os.path.join(x,f) for f in os.listdir(x)]
+    # img_paths = find_path('../HeadSwap/test_img')[::-1]
     
     src_paths = ['./assets/5.jpg']
     tgt_paths = ['assets/fe54875c-2cf0-4147-b08a-80552a9f46be.jpg']
