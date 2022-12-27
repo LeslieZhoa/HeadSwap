@@ -4,7 +4,7 @@ It includes two stages<br>
 1.  One stage  deeply copy from [PIRender](https://github.com/RenYurui/PIRender)<br>
 2. The other stage is from [HeSer.Pytorch](https://github.com/LeslieZhoa/HeSer.Pytorch)
 ## Some examples
-the pictures is from [小红书](https://www.xiaohongshu.com/) and [baidu](baidu.com)
+the pictures is from [小红书](https://www.xiaohongshu.com/) and [baidu](https://www.baidu.com)
 ![](assets/1-e6de879a-f3c2-47f8-9588-feab95df7b9e.png)
 ![](assets/2-6.png)
 ![](assets/3c7b5309-37dc-4cd4-abba-dab4b2482285-7ed01838-3959-48c4-a946-f7bb0232b8cc.png)
