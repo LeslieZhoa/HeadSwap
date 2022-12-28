@@ -8,6 +8,7 @@ from dataloader.AlignLoader import AlignData
 from dataloader.BlendLoader import BlendData
 import random
 import numpy as np
+import cv2
 
 
 def requires_grad(model, flag=True):
@@ -228,7 +229,7 @@ def compute_graph(cos_dis):
     for k,v in dd.items():
         dd[k] = list(set(v+[k]))
     return dd,index
-from cv2 import cv2
+
 def color_transfer2(background, face, center_ratio=1.0, mask=None):
     '''
     根据background 校正 face
