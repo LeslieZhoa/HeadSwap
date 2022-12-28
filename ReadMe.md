@@ -3,6 +3,9 @@ This is a HeadSwap project, mainly inspired by [HeSer.Pytorch](https://github.co
 It includes two stages<br>
 1.  One stage  deeply copy from [PIRender](https://github.com/RenYurui/PIRender)<br>
 2. The other stage is from [HeSer.Pytorch](https://github.com/LeslieZhoa/HeSer.Pytorch)
+## !!!!! NEW !!!!
+Colab notebooks: 
+* single image infer: [![single image infer](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1HNtE8yFo3sPtwWpEzq0LBEAb9oR29B92?usp=sharing)
 ## Some examples
 the pictures is from [小红书](https://www.xiaohongshu.com/) and [baidu](https://www.baidu.com)
 ![](assets/1-e6de879a-f3c2-47f8-9588-feab95df7b9e.png)
