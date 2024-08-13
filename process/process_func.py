@@ -16,7 +16,7 @@ class Process:
         if torch.cuda.is_available():
             self.device = 'cuda'
         self.face_detector = FaceDetector(device='cuda')
-        self.lmk_detector = face_alignment.FaceAlignment(face_alignment.LandmarksType._3D, flip_input=False)
+        self.lmk_detector = face_alignment.FaceAlignment(face_alignment.LandmarksType.THREE_D, flip_input=False)
         # 3dmm params
         self.ParamsModel = ReconNetWrapper()
         self.ParamsModel.to(self.device)

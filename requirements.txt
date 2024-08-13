@@ -1,0 +1,10 @@
+--extra-index-url https://download.pytorch.org/whl/cu117
+
+torch==1.13.1+cu117 
+torchvision==0.14.1+cu117 
+torchaudio==0.13.1
+opencv-python==4.10.0.84
+onnxruntime-gpu==1.14
+face-alignment==1.4.1
+imgaug==0.4.0
+numpy==1.23.1

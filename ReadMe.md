@@ -4,6 +4,7 @@ It includes two stages<br>
 1.  One stage  deeply copy from [PIRender](https://github.com/RenYurui/PIRender)<br>
 2. The other stage is from [HeSer.Pytorch](https://github.com/LeslieZhoa/HeSer.Pytorch)
 ## !!!!! NEW !!!!
+Fix enviroment bug！！！<br>
 Colab notebooks: 
 * single image infer: [![single image infer](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LeslieZhoa/HeadSwap/blob/main/infer.ipynb)
 ## Some examples
@@ -20,7 +21,12 @@ face parsing -> [face-parsing.PyTorch](https://github.com/zllrunning/face-parsin
 3dmm -> [Deep3DFaceRecon_pytorch](https://github.com/sicxu/Deep3DFaceRecon_pytorch)
 ## How to Run
 1. envrionment<br>
-    follow PIRender and Heser<br>
+    cuda 11.7,torch1.13.1
+    ```
+    conda create -n headswap python==3.10.12
+    conda activate headswap
+    pip install -r requirements.txt 
+    ```
     LVT in this project is follow [here](https://github.com/LeslieZhoa/LVT)
 2. download model<br>
     a. follow Deep3DFaceRecon_pytorch(https://github.com/sicxu/Deep3DFaceRecon_pytorch#prepare-prerequisite-models), download BFM files and epoch_20.pth in pretrained_models <br>
@@ -29,6 +35,18 @@ face parsing -> [face-parsing.PyTorch](https://github.com/zllrunning/face-parsin
     ```
     cd process
     bash download_weight.sh
+    ```
+    files like this:<br>
+    ```
+    pretrained_models/
+    ├── BFM
+    │   ├── 01_MorphableModel.mat
+    │   └── similarity_Lm3D_all.mat
+    ├── Blender-401-00012900.pth
+    ├── epoch_00190_iteration_000400000_checkpoint.pt
+    ├── epoch_20.pth
+    ├── parsing.pth
+    └── sr_cf.onnx
     ```
 3. run 
     ```py
